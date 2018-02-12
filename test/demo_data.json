@@ -1,0 +1,21 @@
+{
+    "_string": "abc",
+    "_number": 123,
+    "_boolean": false,
+    "_string_array": [
+        "abc",
+        "def"
+    ],
+    "_number_array": [
+        123,
+        456
+    ],
+    "_sub": {
+        "_string": "abc",
+        "_number": 123,
+        "_boolean": true
+    },
+    "_auto_complation": {
+        "_sub_2": "abc" 
+    }
+}
