@@ -70,8 +70,31 @@ safeguard(schema, data) /** =>
   {
     state: false,
     message: 'TypeError: _string should be required',
-    {
+    complated_data: {
       _string_array: []
+    }
+  }
+*/
+```
+
+### Custom Assert
+
+``` js
+const safeguard = require('json-safeguard')
+
+const schema = {
+  _number: (value) => value < 20
+}
+const data = {
+  _number: 15
+}
+
+safeguard(schema, data) /** =>
+  {
+    state: true,
+    message: '',
+    complated_data: {
+      _string_array: 15
     }
   }
 */
