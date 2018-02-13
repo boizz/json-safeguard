@@ -1,7 +1,7 @@
 {
   "name": "json-safeguard",
   "version": "1.0.0",
-  "description": "A lib that effectively safeguards data types",
+  "description": "A lib that effectively safeguards data types, and automatic completion of the required words.",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec --recursive",
@@ -9,6 +9,14 @@
     "lint": "eslint ./index.js --cache",
     "validate": "npm ls"
   },
+  "keywords": [
+    "JSON",
+    "type",
+    "javascript",
+    "JSON assert",
+    "safe JSON",
+    "date"
+  ],
   "author": "Heleth <bon.hoo@hotmail.com>",
   "license": "MIT",
   "dependencies": {
