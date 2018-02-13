@@ -4,6 +4,7 @@ module.exports = {
   _boolean: 'boolean*',
   _string_array: 'string[]*',
   _number_array: 'number[]*',
+  _array: '[]',
   _sub: {
     _string: (value) => {
       return value === 'abc'

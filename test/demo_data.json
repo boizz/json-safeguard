@@ -2,6 +2,10 @@
     "_string": "abc",
     "_number": 123,
     "_boolean": false,
+    "_array": [
+        123,
+        "abc"
+    ],
     "_string_array": [
         "abc",
         "def"

@@ -48,14 +48,14 @@ const assertValue = (schemaValue, fieldValue, errorFields, fieldName) => {
       if (isArr) { // 校验数组类型
         // 如果字段非数组
         if (valueType !== 'array') {
-          errorFields.push(`TypeError: ${fieldName} should be a array, but ${valueType}`)
+          errorFields.push(`TypeError: ${fieldName} should be array, but now it is ${valueType}`)
         } else { // 如果是数组，校验子节点
-          if (!fieldValue.every(item => realtype(item) === basicType)) {
-            errorFields.push(`TypeError: ${fieldName} child should be a ${basicType}, but ${valueType}`)
+          if (basicType && !fieldValue.every(item => realtype(item) === basicType)) {
+            errorFields.push(`TypeError: ${fieldName} child should be ${basicType}, but now it is ${valueType}`)
           }
         }
       } else if (valueType !== basicType) { // 校验普通类型
-        errorFields.push(`TypeError: ${fieldName} should be a ${basicType}, but ${valueType}`)
+        errorFields.push(`TypeError: ${fieldName} should be ${basicType}, but now it is ${valueType}`)
       }
     }
   } else if (schemaType === 'array' || schemaType === 'object') { // 遍历子节点
