@@ -4,10 +4,11 @@
 [![npm package](https://img.shields.io/npm/v/json-safeguard.svg?style=flat-square)](https://www.npmjs.org/package/json-safeguard)
 [![NPM downloads](http://img.shields.io/npm/dm/json-safeguard.svg?style=flat-square)](https://npmjs.org/package/json-safeguard)
 [![Dependency Status](https://david-dm.org/BoizZ/json-safeguard.svg?style=flat-square)](https://david-dm.org/BoizZ/json-safeguard)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBoizZ%2Fjson-safeguard.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FBoizZ%2Fjson-safeguard?ref=badge_shield)
 
 A lib that effectively safeguards data types, and automatic completion of the required words.
 
-## Quick Start
+## Quick Start
 
 ```bash
 npm i --save json-safeguard
@@ -79,3 +80,6 @@ safeguard(schema, data) /** =>
 ## License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBoizZ%2Fjson-safeguard.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBoizZ%2Fjson-safeguard?ref=badge_large)
