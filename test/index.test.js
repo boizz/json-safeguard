@@ -10,7 +10,6 @@ const assert = require('../index')
 
 describe('JSON 校验', () => {
   const autoComplationRes = assert(autoComplation, data, true)
-  assert()
 
   it('字段丢失应该报出错误', () => {
     expect(autoComplationRes.state).to.be.equal(false)
@@ -18,18 +17,6 @@ describe('JSON 校验', () => {
 
   it('可以自动补全必填数组类型', () => {
     expect(JSON.stringify(autoComplationRes.complated_data._auto_complation._sub_1._number_array)).to.be.equal('[]')
-  })
-
-  it('可以自动补全必填字符串类型', () => {
-    expect(autoComplationRes.complated_data._auto_complation._string).to.be.equal('')
-  })
-
-  it('可以自动补全必填数字类型', () => {
-    expect(autoComplationRes.complated_data._auto_complation._number).to.be.equal(0)
-  })
-
-  it('可以自动补全必填布尔类型', () => {
-    expect(autoComplationRes.complated_data._auto_complation._boolean).to.be.equal(false)
   })
 
   it('自动补全不会影响其他信息', () => {
@@ -41,8 +28,18 @@ describe('JSON 校验', () => {
     expect(res.state).to.be.equal(true)
   })
 
-  it('应该会报很多错误', () => {
+  it('应该能够检验出错误', () => {
     const res = assert(somethingError, data)
+    expect(res.state).to.be.equal(false)
+  })
+
+  it('传入的数据为其他类型应该是安全的', () => {
+    const res = assert(allRight, 'abcde')
+    expect(res.state).to.be.equal(false)
+  })
+
+  it('不传入数据应该是安全的', () => {
+    const res = assert(allRight)
     expect(res.state).to.be.equal(false)
   })
 })
