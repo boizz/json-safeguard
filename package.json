@@ -1,6 +1,6 @@
 {
   "name": "json-safeguard",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A lib that effectively safeguards data types, and automatic completion of the required words.",
   "main": "index.js",
   "scripts": {
