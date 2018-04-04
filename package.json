@@ -9,6 +9,9 @@
     "lint": "eslint ./index.js --cache",
     "validate": "npm ls"
   },
+  "engines": {
+    "node" : ">=6.9.5"
+  },
   "keywords": [
     "JSON",
     "type",
