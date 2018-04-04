@@ -41,7 +41,7 @@ safeguard(schema, data) /** =>
 const schema = {
   name: 'string*',
   age: 'number',
-  excellent: (val, data) => {
+  excellent: (value, data) => {
     const subjects = data.subjects || []
     const isExcellent = subjects.every(item => item.achievement >= 90)
     return isExcellent === value ? true : {
