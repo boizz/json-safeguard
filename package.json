@@ -1,6 +1,6 @@
 {
   "name": "json-safeguard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A lib that effectively safeguards data types, and automatic completion of the required words.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "validate": "npm ls"
   },
   "engines": {
-    "node" : ">=6.9.5"
+    "node": ">=6.9.5"
   },
   "keywords": [
     "JSON",
