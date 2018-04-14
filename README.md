@@ -84,7 +84,7 @@ safeguard(schema, data) /** =>
   {
     state: false,
     message: 'Heleth is excellent. | hobby: Expected a value is required.',
-    complated_data: {
+    completed_data: {
       name: 'Heleth',
       age: 23,
       excellent: false,

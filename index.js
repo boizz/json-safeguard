@@ -70,7 +70,7 @@ module.exports = (schema, data) => {
 
   const res = assert(schema, data, data)
   const body = {}
-  body.complated_data = res
+  body.completed_data = res
 
   if (errorMessages.length) {
     body.state = false

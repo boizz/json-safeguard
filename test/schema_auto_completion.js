@@ -15,7 +15,7 @@ module.exports = {
       return value
     }
   },
-  _auto_complation: {
+  _auto_completion: {
     _sub_1: {
       _number_array: 'number[]*'
     },
