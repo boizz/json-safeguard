@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec --recursive",
-    "cov": "nyc mocha --recursive",
+    "cover": "nyc mocha --recursive",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint ./index.js --cache",
     "validate": "npm ls"
   },
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
     "eslint": "^4.17.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",
@@ -34,6 +36,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "mocha": "^5.0.0",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^11.4.1",
     "precommit-hook": "^3.0.0"
   },

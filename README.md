@@ -1,8 +1,9 @@
 # json-safeguard
 
 [![Build Status](https://travis-ci.org/BoizZ/json-safeguard.svg?branch=master)](https://travis-ci.org/BoizZ/json-safeguard)
-[![npm package](https://img.shields.io/npm/v/json-safeguard.svg?style=flat-square)](https://www.npmjs.org/package/json-safeguard)
-[![NPM downloads](http://img.shields.io/npm/dm/json-safeguard.svg?style=flat-square)](https://npmjs.org/package/json-safeguard)
+[![Coverage Status](https://coveralls.io/repos/github/BoizZ/json-safeguard/badge.svg)](https://coveralls.io/github/BoizZ/json-safeguard)
+[![NPM Package](https://img.shields.io/npm/v/json-safeguard.svg?style=flat-square)](https://www.npmjs.org/package/json-safeguard)
+[![NPM Downloads](https://img.shields.io/npm/dm/json-safeguard.svg?style=flat-square)](https://npmjs.org/package/json-safeguard)
 [![Dependency Status](https://david-dm.org/BoizZ/json-safeguard.svg?style=flat-square)](https://david-dm.org/BoizZ/json-safeguard)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBoizZ%2Fjson-safeguard.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FBoizZ%2Fjson-safeguard?ref=badge_shield)
 
