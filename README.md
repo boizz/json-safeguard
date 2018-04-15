@@ -124,13 +124,13 @@ const schema = {
 
 | Types | Value | Description |
 | :-: | :-: | :-: |
-| Boolean | `boolean` | Check if the value of this field is boolean. |
-| Number | `number` | Check if the value of this field is number. |
-| String | `string` | Check if the value of this field is string. |
-| Array | `[]` | Only check if this field is an array. |
-| Boolean-Array | `boolean[]` | Check the array field and check if the child node is a boolean. |
-| Number-Array | `number[]` | Check the array field and check if the child node is a number. |
-| String-Array | `string[]` | Check the array field and check if the child node is a string. |
+| Boolean | `boolean` | True or false. |
+| Number | `number` | Integer or float. |
+| String | `string` |  |
+| Array | `[]` | Array of any. |
+| Boolean-Array | `boolean[]` | Array of boolean only. |
+| Number-Array | `number[]` | Array of number only. |
+| String-Array | `string[]` | Array of string only. |
 
 ### Required and Automatic Completion
 
@@ -154,7 +154,7 @@ safeguard(schema, data) /** =>
   {
     state: false,
     message: '_string_array: Expected a value is required.',
-    complated_data: {
+    completed_data: {
       _string_array: []
     }
   }
@@ -166,14 +166,6 @@ safeguard(schema, data) /** =>
 | Types | Value | Description |
 | :-: | :-: | :-: |
 | Custom Verify | (value, data) => any | Use a custom function to check if this field meets the requirements. Return a boolean to tell the result of the check directly. You can also return an object and set the custom message and default value, please read below for details. |
-
-#### Return an object
-
-| Property | Description | Type |
-| :-: | :-: | :-: |
-| state | Verification state  | boolean |
-| message | Error message | string |
-| defaultValue | Default value of this field | any |
 
 ``` js
 const safeguard = require('json-safeguard')
@@ -189,7 +181,7 @@ safeguard(schema, data) /** =>
   {
     state: true,
     message: '',
-    complated_data: {
+    completed_data: {
       _string_array: 15
     }
   }
@@ -202,7 +194,7 @@ safeguard(schema, data) /** =>
 | :-: | :-: | :-: | :-: |
 | state | Verification state | boolean | - |
 | message | Error message | string | '' |
-| complated_data | Complated data | object | {} |
+| completed_data | Safe data containing required arrays and objects | object | {} |
 
 ## License
 
